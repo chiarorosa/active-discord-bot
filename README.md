@@ -2,6 +2,10 @@
 
 Bot do Discord desenvolvido em Python para integração e automação de comandos utilizando a biblioteca `discord.py`.
 
+## Exemplo: Bot online
+
+![Bot online](bot_online.png)
+
 ## Requisitos
 
 - Python 3.8+
@@ -18,8 +22,6 @@ curl -Ls https://astral.sh/uv/install.sh | sh
 uv venv
 
 uv pip install -r requirements.txt
-
-uv run bot.py
 ```
 
 ## Configuração
@@ -39,12 +41,12 @@ TESTING_GUILD_ID="ID do SERVIDOR"
 ## Como executar
 
 ```bash
-python bot.py
+uv run bot.py
 ```
 
 ## Principais métodos e eventos
 
-- **Classe `WordcabBot`**: Herda de `discord.Client` e gerencia eventos e comandos do bot.
+- **Classe `ActBot`**: Herda de `discord.Client` e gerencia eventos e comandos do bot.
 
   - `on_ready`: Executado quando o bot conecta e está pronto.
   - `on_guild_join`: Executado quando o bot entra em um novo servidor.

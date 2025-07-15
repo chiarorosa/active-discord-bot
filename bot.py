@@ -119,7 +119,7 @@ class ActBot(discord.Client):
 
 # --- Definição de Intents ---
 # Começa com intents padrão
-definir_intents = discord.Intents.default()
+intents = discord.Intents.default()
 # Adiciona intents privilegiadas se necessário E habilitadas no Portal de Desenvolvedores
 intents.message_content = (
     True  # Necessário para ler o conteúdo das mensagens (comandos por prefixo, análise de mensagens)
