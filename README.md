@@ -10,10 +10,16 @@ Bot do Discord desenvolvido em Python para integração e automação de comando
   - aiohttp
   - python-dotenv
 
-Instale as dependências com:
+Instale as dependências com UV:
 
 ```bash
-pip install -r requirements.txt
+curl -Ls https://astral.sh/uv/install.sh | sh
+
+uv venv
+
+uv pip install -r requirements.txt
+
+uv run bot.py
 ```
 
 ## Configuração
