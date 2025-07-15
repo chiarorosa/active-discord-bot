@@ -38,6 +38,9 @@ TESTING_GUILD_ID="ID do SERVIDOR"
 
 2. No [Portal de Desenvolvedores do Discord](https://discord.com/developers/applications), ative as intents privilegiadas "Message Content" e "Members" para o seu bot.
 
+3. Em OAuth2 URL Generator
+   scopes [bot] e permissions [Administrator] copiar Generated URL, acessar no navegador para adicionar o BOT ao servidor desejado.
+
 ## Como executar
 
 ```bash
