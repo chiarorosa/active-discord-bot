@@ -23,9 +23,9 @@ if not DISCORD_BOT_TOKEN:
 
 
 # --- Classe do Bot ---
-class MCPBot(discord.Client):
+class ActBot(discord.Client):
     """
-    Bot do Discord para integração com MCP.
+    Bot do Discord para manter ativo.
 
     Esta classe herda de discord.Client e gerencia eventos, comandos e recursos do bot.
     """
@@ -128,7 +128,7 @@ intents.members = True  # Necessário para eventos de entrada/saída de membros,
 # LEMBRETE: Habilite essas intents no Portal de Desenvolvedores do Discord!
 
 # --- Instanciação do Bot ---
-bot = MCPBot(intents=intents, testing_guild_id=TESTING_GUILD_ID)
+bot = ActBot(intents=intents, testing_guild_id=TESTING_GUILD_ID)
 
 
 # --- Definição de um Comando de Barra Simples (Exemplo) ---
